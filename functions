@@ -1,0 +1,82 @@
+# 11-07-2025
+# Functions.
+# # Functions: Block of code that is reusable.
+def sum():     # function defination.
+    x=10
+    y=30
+    print(x+y)
+    
+sum()          # function calling
+print("Project work")
+sum()
+
+# # Parameter is the variable listed inside the function definition. 
+# # Argument is the value that is sent to the function when it is called. 
+
+def my_function(name):
+ print("Hi",name,"this is function")
+
+my_function("Khusi")
+my_function("Payal")
+my_function("Abhishek")
+
+# # Passing a list as an argument.
+def function(food):
+  for x in food:
+   print(x)
+
+fruits=["apple","banana","cheery","orange"]
+function(fruits)
+
+# # Lambda: small anonymous function. 
+# # can take any number of arguments, but have only one expression. 
+
+x=lambda a : a+10
+print(x(5))
+
+x=lambda a,b : a+b+10
+print(x(4,5))
+
+x=lambda a,b,c : a+b+c
+print(x(3,5,6))
+
+# # why use lambda: we use them as a anonymous function inside normal function. 
+
+def myfunc(n):    # function defination which have parameter.
+ return lambda a : a+n    # a=11+2
+
+xyz=myfunc(2)   # function calling with argument.
+print(xyz(11))    # 11+2
+print(myfunc(2)(2))
+print(myfunc(4)(10))
+
+# # Take 2 parameters "firstname" and "lastname" in normal function.
+# # Use lambda function inside normal function and take 1 argument "middlename" in lambda function. Print those values. 
+# # Your output should be in "firstname+middlename+lastname" order.
+
+def func(firstname,lastname):
+ return lambda middlename : firstname + middlename + lastname
+
+print(func("Neil ",'Mukesh')("Nitin "))          # Neil Nitin Mukesh
+
+# # Python Dates.  Module have functions which we use.
+import datetime
+
+x=datetime.datetime.now()
+print(x)
+
+# # create date object  (year,month,day) (hour,minute,second)
+# x=datetime.datetime(2020,10,5)
+# print(x)
+
+# For year and name of the weekday.
+# strftime() is a function which takes one parameter.
+print(x.strftime("%a"))     # short weekday.
+print(x.strftime("%A"))     # full weekday.
+print(x.strftime("%d"))     # Date of month.
+print(x.strftime("%w"))     # Weekday as a number 0-6, 0 is sunday, 1 is monday, 2 is Tuesday...... 6 is saturday.
+print(x.strftime("%m"))     # Month as a number 1-12, 1 is January, 2 is Feburary.......
+print(x.strftime("%y"))     # short year.
+print(x.strftime("%Y"))     # full year.
+print(x.strftime("%x"))     # Local version of date.
+print(x.strftime("%X"))     # Local version of time.
