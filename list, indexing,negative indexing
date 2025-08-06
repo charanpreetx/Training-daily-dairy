@@ -1,0 +1,93 @@
+# 30-06-2025.
+# Revise string.
+
+# 01-07-2025.  
+# # Lists
+# # [ ]  
+# # used to store multiple items in a single variable. 
+# # ordered. means the list items have defined order, and the order will not change. need to add new item it will comes in end. 
+# # changeable/mutable. means we can change/insert, add and remove items after the creation of list
+# # allow duplicate values. since lists are indexed, lists can have items with the same value.
+# # list items are indexed from 0,1,2,3,4..... Negative index from ......-3,-2,-1 
+
+xyz=["Anmol",2,"Jagdeep", "Anmol", "cherry", True, 34, 3.4]
+print(xyz)
+print(len(xyz))
+
+xyz=[True, False, True, False]
+print(xyz)
+
+print(type(xyz))
+
+# # List constructor list(). ("apple", 30, "cherry", True, 55)
+list3=list(("apple", 30, "cherry", True, 55))
+print(list3)
+
+# # Access items through index.
+list4=["apple", 30, "cherry", True, 55]
+print(list4[1])
+
+# #  Negative indexing.
+print(list4[-1])
+
+# # Range of Indexes: access mutiple items using range of index. range[2:5] do not include 5.
+list5=["apple", 3.80, "cherry", True, 55, "banana", 5.7]
+print(list5[2:6])
+print(list5[:6]) 
+print(list5[2:]) 
+
+# # Check if item exists.
+list6=["apple", 3.80, "cherry", True, 55, "banana", 5.7]
+if 5.5 in list6:
+ print("yes") 
+else:
+ print("no")
+
+# Function/Methods.
+# # Apend Items: add an item to the end of the list.
+list7=["apple", 3.80, "cherry"]
+# print(list7.append("orange"))
+list7.append("orange")
+print(list7)
+
+# To remove items from list we have 4 methods.
+
+# # Remove list items: remove() method removes specified item.
+list8=["apple","banana","cherry"]
+list8.remove("banana")
+print(list8)
+
+# # pop(): removes item at specified index. if you do not specify the index, then pop() removes the last item.
+list9=["apple","banana","cherry",5,True]
+list9.pop(3)
+print(list9)
+
+list9=["apple","banana","cherry",5,True]
+list9.pop()
+print(list9)
+
+# # del: removes the item at specified index. also delete the list completely.
+list10=["apple","banana","cherry"]
+del list10[0]
+print(list10)
+
+del list10
+# print(list10)
+print("list10 is removed")
+
+# # Clear the list: clear() method empty the list. list is there, but has no content.
+list11=["apple","banana","cherry"]
+list11.clear()
+print(list11)
+
+# # sort lists: using sort function we can sort list alphanumerically, ascending, by default.
+list12=["apple","cherry","banana","orange","mango"]
+# list12.sort()
+# print(list12)
+list12.sort(reverse=True)        # Descending.
+print(list12)
+
+# # Looping of list.
+list13=["apple","banana","cherry"]
+for x in list13:
+    print(x)
