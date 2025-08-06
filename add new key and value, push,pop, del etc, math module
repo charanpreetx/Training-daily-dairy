@@ -1,0 +1,87 @@
+# # 09-07-2025.
+# # #  Add new key and value.
+# xyz={
+#     "name":"Krishma",
+#     "Course":"Python",
+#     "Timings":10.30,
+#     "Colors":["red","blue","pink"]
+# }
+# print(xyz)
+# xyz["state"]="Punjab"
+# print(xyz)
+
+# # Remove
+# # pop(): removeitem with specific key.
+# # Popitem(): remove last item.
+# # clear() to clear dict items.
+# # del remove item with specific key. can delete the dict.
+
+# # # pop(): removeitem with specific key.
+# ABC={
+#     "student":"Diksha",
+#     "course":"python",
+#     "timings":10,
+#     "Batch":"A",
+# }
+# ABC.pop("timings")
+# print(ABC)
+
+# # Popitem(): remove last item.
+# ABC.popitem()
+# print(ABC)
+
+# # clear() to clear dict items.
+# ABC.clear()
+# print(ABC)
+
+# # # del remove item with specific key.
+# ABC={
+#     "student":"Diksha",
+#     "course":"python",
+#     "timings":10,
+#     "Batch":"A",
+# }
+# del ABC["student"]
+# print(ABC)
+
+# # del dictionary.
+# dictt={
+#     "student":"Diksha",
+#     "course":"python",
+#     "timings":10,
+#     "Batch":"A",
+# }
+# del dictt
+# # print(dictt)
+
+# # Copy dict.
+# abc={
+#     "student":"Diksha",
+#     "course":"python",
+#     "timings":10,
+#     "Batch":"A",
+# }
+# ABCD=abc.copy()
+# print(ABCD)
+
+# Math module. Inside modules we have functions
+import math
+
+# y=dir(math)
+# print(y)
+
+# # modulename.functionname   
+x=math.sqrt(64)             # returns square root of a number
+print(x)
+
+y=math.floor(5.6)           # rounds a number downwards to its nearest integer.
+print(y)
+
+x=math.ceil(5.6)            # rounds a number upwards to its nearest integer.  1.1,1.2,...1.9=2
+print(x)
+
+x=math.pi                    # returns pi value
+print(x)
+
+x=math.e                     # returns euler's number 
+print(x)
