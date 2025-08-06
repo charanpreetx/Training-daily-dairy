@@ -1,0 +1,102 @@
+# 27-06-2025
+# # Conditional statements.
+# # if, if-else, elif, Nested if-else.
+
+# # # if: only one condition.
+# a=1000
+# b=200
+# if(a>b):    # 1000>200
+#     print("a is greater than b")
+
+# # # if-else: if condition is not true then only else will run.
+# a=100
+# b=200
+# if(a>b):    
+#     print("a is greater than b")
+# else:
+#     print("Condition wrong")
+
+# # # Elif: multiple conditions.
+# a=200
+# b=200
+# if(a>b):
+#     print("a is greater than b")
+# elif(a<b):    
+#     print("a is less than b")
+# elif(a==b):
+#     print("a is equal to b")
+# else:
+#     print("Undefined")
+
+# # # Nested if-else. 
+# age = 20
+# citizen = False
+# if age >= 18:     # 20>=18
+#     if citizen:   #
+#         print("You are eligible to vote.")
+#     else:
+#         print("You must be a citizen to vote.")
+# else:
+#     print("You are too young to vote.")
+
+
+# # Loops: based on DRY (Don't repeat yourself)
+# for loop
+# while loop
+
+# for loop: iterate the values. We know the steps.
+# range(start_value , end_value-1),   range(5) range(0,5-1) range(0,1,2,3,4)
+
+for i in range(1,6):     # range(1,2,3,4,5)
+    print("Hello")
+
+# While: we don't know about steps. Will run until the condition is true.
+# initialization
+# while(condition)
+# statement
+# inc/dec
+
+# i=1
+# while(i<6):    # 1<6...2<6.....6<6
+#     print(i, end=" ")   
+#     i=i+1    # 
+
+# # if you forget to increment i then, loop will never end.
+
+# # List with loop.
+# print("\n")
+# list1=["red", "big", "tasty"]
+# for i in list1:
+#     print(i)
+
+# # Nested loop: Loop inside a loop. inner loop will executed one time for each iteration of outer loop.
+# list1=["red", "big", "tasty"]
+# list2=["apple", "banana", "cheery"]
+# for x in list1:            # red     x=big    x=tasty
+#     for i in list2:        # i=apple,banana,cherry   i=apple
+#         print(x,i)         # red,apple   red,banana   red,cherry    big,apple    big,banana    big,cheery  
+
+# # Break statement.
+i=1
+while i<=10:   # i<=10.... 5<=10
+    if i==5:   # 1==5.... 5==5
+        break                 # will break before printing 5.
+    print(i)
+    i=i+1
+
+# continue statement: The continue is used to end the current iteration and continues to the next iteration.
+print("continue: ")
+i=1
+while(i<=10): 
+    if(i==5):     
+        i=i+1
+        continue 
+    print(i)
+    i=i+1
+
+# # pass
+# # if for some reason "if" statement is empty then we can use pass statement to avoid error
+a=30
+b=20
+if(a>b):
+   pass
