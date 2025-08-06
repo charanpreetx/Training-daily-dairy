@@ -1,0 +1,22 @@
+# 14-07-2025.
+# # Modules. same as a code library. A file which contains a set of functions that we want to include.
+# # Module name
+
+import mymodule
+
+mymodule.sum()
+# mymodule.hello()  # error: AttributeError: module 'module' has no attribute 'index'.
+mymodule.Sub()
+
+# # dir() function: tells about the function inside module.
+y=dir(mymodule)
+print(y)
+
+# Built-in module.
+# import platform
+# y=dir(platform)
+# print(y)
+
+# # Rename module.
+import mymodule as my
+my.sum()
