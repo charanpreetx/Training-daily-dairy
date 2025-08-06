@@ -1,0 +1,117 @@
+# 02-07-2025.  
+# # # Using for loop: use range() and len() functions.
+# list14=["apple","banana","cherry","Mango"]
+# length=len(list14)
+# print(length)
+# for i in range(length):    # range(4), range(0,3)
+#       print(list14[i])     # list14[0]
+
+# # # Copy list.
+# list15=["apple","banana","cherry","orange","mango"]
+# list16=list15.copy()
+# print("list16 = ",list16)
+
+# # # count(): count() the number of times the specific value appear
+# list17=["apple","banana","cherry","orange","banana"]
+# x=list17.count("cherry")
+# print(x)
+
+# # # Find index.
+# list18=["apple","banana","cherry","orange","banana"]
+# x=list18.index("apple")
+# print(x)
+
+
+# # # Tasks 
+# # # Range of negative indexes.
+
+# # insert():  add item at specified position.  
+# list19=["apple", 3.80, "cherry", True, 55, "banana", 5.7]
+# list19.insert(4,"Hello")
+# print(list19)
+
+# # extend(): append elements from another list to the current list. 
+# list20=["apple", True, "cherry"]
+# list21=["item2", "cherry"]
+# list20.extend(list21)
+# print(list20)
+
+# # # Range of Indexes: access mutiple items using range of index. range[2:5] do not include 5.
+# list5=["apple", 3.80, "cherry", True, 55, "banana", 5.7]
+# print(list5[3])
+# print(list5[2:6])     
+# print(list5[:6]) 
+# print(list5[2:]) 
+
+# # # Range of negative Indexes: access mutiple items using range of index.
+# list5=["apple", 3.80, "cherry", True, 55, "banana", 5.7]
+# print(list5[-5])
+# print(list5[-5:-2])          
+# print(list5[:-3])         # -5, -4, -3
+# print(list5[-6:]) 
+
+# # Tuple
+# # ()
+# # Used to store multiple items of different data types in a single variable. 
+# # ordered/Indexed.
+# # unchangeable/immutable. 
+# # allow duplicate values. 
+# # tuple items are indexed from 0,1,2,3,4..... Negative index from ......-3,-2,-1.
+
+tuple1=("Remote",True, 23, "Tv")
+print(tuple1)
+print(len(tuple1))
+
+tuple2=("Computer")
+print(type(tuple2))         # string.
+
+tuple3=("Computer",)
+print(type(tuple3))        # tuple.
+
+# # # Tuple constructor. tuple(). ["Pc", "laptop", 4]
+tuple4=tuple(["Pc", "laptop", 4])
+print(tuple4)
+
+# # # Access items.
+tuple5=("Pc", "laptop", 4)
+print(tuple5[2])
+
+# Range of indexes.
+tuple5=("Pc", "laptop", 4, 56, "hello", True)
+print(tuple5[2:5])
+
+# Range of negative indexes.
+print(tuple5[-3:-1])
+
+# # # Loop.
+tuple6=("Pc", "laptop", 4, True, "computer")
+for x in tuple6:
+    print(x)
+
+# # # Loop using range and length.
+tuple7=("Pc", "laptop", 4, True, "computer")
+length=len(tuple6)
+for x in range(length):   # range(5), range(0,4)
+    print(tuple6[x])
+
+# # Methods.
+# count():- returns the no of times a specified value occurs in a tuple. 
+tuple8=(1,2,3,3,2,1,2,3,3,3,3,2,2)
+x=tuple8.count(3)
+print(x)
+
+# # # index():- search the tuple for a specified value and returns the position of where it was found.
+tuple8=("apple",45,"cherry")
+x=tuple8.index("cherry")
+print(x)
+
+# # # del
+tuple9=("apple","banana","cherry")            
+del tuple9
+# # print(tuple9)               # gives error.
+print("The tuple is no longer exists")
+
+# # # Change tuple: We can not do that. To do changes in tuple we need to use some methods.
+
+# Task
+# Check if item exists.
