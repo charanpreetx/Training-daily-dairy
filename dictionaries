@@ -1,0 +1,111 @@
+# 07-07-2025.
+# # Dictonaries.         
+# # {} and have keys and values.  {"key":"value"}
+# # Used to store multiple items in a single variable. 
+# # ordered, we can access items through index. 
+# # changeable. we can change items. add and remove.
+# # do not allow duplicate values. Overwrite previous value.
+
+xyz={"Computer", 56, "PC", "Laptop", 5.2, True,"PC"} 
+print(xyz)
+
+xyz={"name":"Krishma","Course":"Python","Timings":"10:30"}
+print(xyz)
+
+xyz={
+    "name":"Krishma",
+    "Course":"Python",
+    "Timings":"10:30",
+}
+print(xyz)
+print(xyz["Course"])
+
+xyz={
+    "name":"Krishma",
+    "Course":"Python",
+    "Timings":"10:30",
+    "Course":"Javascript"
+}
+print(xyz)
+
+# Dictionary length.
+print("Length of dictonary",len(xyz))
+print(type(xyz))
+
+# Values in dictonaries can be of any type.  23, 1.4, "Hello", True/False
+xyz={
+    "name":"Krishma", 
+    "Course":"Python",
+    "Timings":10.30,
+    "Colors":["red","blue","pink"]
+}
+print(xyz)
+
+# Get keys.
+d=xyz.keys()
+print(d)
+
+# Get values.
+d=xyz.values()
+print(d)
+
+# Get items.
+d=xyz.items()
+print(d)
+
+# Loop
+xyz={
+    "name":"Krishma", 
+    "Course":"Python",
+    "Timings":10.30,
+    "Colors":["red","blue","pink"],
+    "Course":"C",
+}
+for i in xyz:
+    print(xyz[i])   # xyz[0]
+
+# Loop through dict.
+abc={
+    "student":"Diksha",
+    "course":"python",
+    "timings":10,
+    "Batch":"A",
+}
+for i in abc:
+    print(i)   # student
+
+# for i in abc:
+#     print(abc[i]) # abc[student]=Diksha
+
+# # #  with key(), value() 
+# abc={
+#     "student":"Diksha",
+#     "course":"python",
+#     "timings":10,
+#     "Batch":"A",
+# }
+# print("Using keys():")
+# for i in abc.keys():
+#     print(i)
+
+# print("Using values():")
+# for i in abc.values():
+#     print(i)
+
+# print("Using items():")
+# for x in abc.items():
+#     print(x)
+
+# # check if key exists. "in" "not in" keyword.
+# xyz={
+#     "name":"Krishma",
+#     "Course":"Python",
+#     "Timings":10.30,
+#     "Colors":["red","blue","pink"]
+# }
+
+# print("Timings" in xyz)    # True/False
+# print("address" in xyz)
+# print("Timings" not in xyz) 
+# if "Timings" in xyz:
+#     print("Yes")
