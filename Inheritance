@@ -1,0 +1,85 @@
+# 22-07-2025
+# Inheritance.
+# Grandparents==>Parents==>Chid
+# class iphone 1 =>class iphone 2.1 => class iphone 3.1 => ............ => class iphone 16
+# One class can inherit the attributes and methods of other class.
+# Parent/Base/Super class 
+# Child/Derived/Sub class
+
+# # Types of inheritance.
+# # Single inheritance.
+# # Multiple inheritance.
+# # Multilevel inheritance.
+
+# # Single Inheritance.    One parent and one child.
+print("Single Inheritance")
+class Parent1:
+    hair="black"
+    height="154"
+
+class Child(Parent1):
+    age="10"
+
+obj = Child()
+print(obj.hair)
+print(obj.height)
+print(obj.age)
+
+# # Example of single inheritance.
+# class Vehicle:      # Parent/Base/Super
+#     cost=2000
+#     def show(self):
+#         print("This is parent class.")
+
+# class hello(Vehicle):     # Child/Derived/Sub
+#     color="red"
+
+# obj=hello()
+# print(obj.cost)
+# print(obj.color)
+# obj.show()
+
+
+# # Multiple inheritance.
+print("Multiple Inheritance")
+class Parent1:              # Parent/Base/Super
+    height="160"
+    hair="Black"
+
+class Parent2:              # Parent/Base/Super  
+    color="brown"
+    eyes="small"
+    height="154"
+
+class Child(Parent1,Parent2):     # Child
+    age="15"
+
+obj=Child()
+print(obj.height)
+print(obj.color + " " + obj.eyes)
+print(obj.age)
+
+
+# Multilevel inheritance
+print("Multilevel Inheritance")
+class GrandParents:
+    hair="black"
+    weight="65"
+
+class Parents(GrandParents):
+    color="brown"
+    eyes="small"
+
+class Child(Parents):
+    age=10
+
+obj1=Parents()
+obj2=Child()
+print(obj1.hair)
+print(obj1.color)
+# print(obj1.age)     # Cannot access
+print(obj2.age)
+
+# Task 
+# WAP for multilevel inheritance. Use Vehicle example.
+# WAP for multiple inheritance. Use Vehicle example.
