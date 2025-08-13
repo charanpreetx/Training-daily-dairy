@@ -1,0 +1,45 @@
+# 16-07-2025
+# Exception: Exception are nothing but errors.
+# We can say that exception is an unexpected event, which occurs during the execution of a program.
+
+# a=int(input("Enter number:"))   # ValueError
+
+# y=5/0
+# print(y)    # ZeroDivisionError
+
+# print("Hello")
+
+# # To overcome these type of errors we use Exception handling.
+# # In following code if there is error it will not show error just show statement which we wrote.
+
+# # try and except.
+# try:
+#     a=int(input("Enter number: "))
+# except:
+#     print("There is some error.")
+
+# print("Above program is about try and except.")
+
+# # try, except and Else
+# try:
+#     a=int(input("Enter number first: "))
+#     b=int(input("Enter number second: "))
+# except:
+#     print("There is some error.")    # It will execute only if there is error in our program.
+# else:
+#     print("Result:", a+b)    # It will execute only of our program have no error.
+
+# print("Above program is about try, except and else.")
+
+# try, except, else and finally.
+try:
+    a=int(input("Enter number first: "))
+    b=int(input("Enter number second: "))
+except:
+    print("There is some error.")
+else:
+    print("Result:", a+b)   
+finally:
+    print("finally")   # It will execute always wheather exception occur or not.
+
+print("Above program is about try, except, else and finally.")
