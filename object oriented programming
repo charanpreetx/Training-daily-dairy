@@ -1,0 +1,85 @@
+# 19-07-2025
+# OOPS Object oriented programming language
+# Classes, Object, Constructor, Inheritance, Encapsulation, Polymorphism etc
+# Python is an OOP, allowing us to structure our code using classes and objects for better organization and reusability.
+
+# Advantages of OOP:-
+# Provide clear structure of code.
+# Easier to maintain, reuse and debug.
+# Based on DRY(Don't repeat yourself).
+
+# Class: It is an template or blueprint for creating objects.
+# Example Phone, Fruits.
+# To create a class we need to use "class" keyword.
+# Inside class we have attribute/variables and methods/functions.
+# The first letter of class name should be capital.
+# To use class we need to create its object.
+# Function inside class should have one parameter "self".
+
+# # Syntax of class:
+# class Classname:
+#     # statement
+
+# Object: It is an instance of class.
+# Example Samsung, iphone, oneplus etc
+# Example: Mango, cherry, Banana etc
+      
+# # Syntax of Object creation:
+# obj= Classname()
+# # print statement
+
+# With attributes/variables
+class Student:
+    x=25              
+
+abc=Student()                        # object create named 'abc'
+print(abc.x)                         # access attribute x
+
+print("Extra work.")
+
+abc1=Student()
+print(abc1.x)
+
+# With methods/Functions
+class Phone:                         # first letter of classname should be capital.
+    def call(self):
+        print("Please call")         # Methods/Functions
+
+xyz=Phone()
+xyz.call()
+
+# With parameters inside methods.
+class Phone:
+    def set_color(self,color):
+        self.color=color
+    def show_color(self):
+        return self.color
+    
+obj=Phone()
+obj.set_color("Black")
+print(obj.show_color())
+
+# pass statement. Class defination cannot be empty. If for some reason we don;t have content, then we can use pass keyword.
+class Iphone:
+    pass
+
+# Modify object properties.
+class Student:
+    x=20
+    
+xyz=Student()
+print(xyz.x)
+
+xyz.x=40
+print(xyz.x)
+
+# # Delete object: use 'del' keyword.
+class Student:
+    x=28
+xyz=Student()
+print(xyz.x)
+del xyz
+# print(xyz.x)
+
+# Task.
+# Create a class named "Employee" which have attributes and methods.
