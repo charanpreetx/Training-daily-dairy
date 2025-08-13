@@ -1,0 +1,89 @@
+# 23-07-2025.
+# Encapsulation: It bind whole data in single unit which means it will bind all attributes and methods in a single class.
+# These attributes and methods can be accessed by memeber/public functions of the same class.
+# Getter and setter method.
+# For example capsule, drugs are safe inside the capsule.
+
+# class Student:
+#     # private attributes
+#     # private methods
+#     # public functions can be created to access private attributes and private methods.
+
+# private attributes.
+class Internet:
+    wifiname="Vipro"
+    wifipass=12345      # Public attribute
+    
+obj = Internet()
+print(obj.wifiname)
+print(obj.wifipass) # Can access directly.
+obj.wifipass=4567   # anyone can access and change the password.
+print(obj.wifipass)
+
+
+# private attributes.
+class Internet:
+    wifiname="Vipro"
+    __wifipass=12345      # private attribute
+
+    def show(self):
+        print(self.__wifipass)
+    
+obj = Internet()
+print(obj.wifiname)
+# print(obj.__wifipass) # Can not access directly.
+obj.show()
+
+# private methods/functions
+class Internet:
+    def __show(xyz):
+        print("This is private method.")
+    
+    def display(self):
+        self.__show()
+
+abc=Internet()
+# abc.__show()   # cannot access directly.
+abc.display()
+
+# Getter and setter method: used to access private attributes.
+
+class Student:
+    def _init_(self):
+        self.name="Rajan"
+        self.__tech="CSS"
+
+    def info2(self):
+        return self.name+" "+self.__tech
+    
+    def set__tech(self,t):
+        self.__tech=t
+
+    def get__tech(self):
+        return self.__tech
+    
+obj=Student()
+print(obj.info2())
+obj.set__tech("HTML")
+print(obj.get__tech())
+
+
+class Internet:
+    wifiname="Vipro"
+    __wifipass=1234
+
+    def info(self):
+        print(self.__wifipass)
+    
+    def set__wifipass(self,t):
+        self.__wifipass=t
+
+    def get__wifipass(self):
+        print(self.__wifipass)
+    
+obj=Internet()
+print(obj.wifiname)
+obj.info()
+
+obj.set__wifipass("2345")
+obj.get__wifipass()
