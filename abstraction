@@ -1,0 +1,49 @@
+# 24-07-2025
+# Abstraction: Provides the abstract or more deep details of the data.
+# For example: TV set where we enjoy programs without knowing internal working.
+
+# Without abstraction.
+class TV: 
+    def Channel(self):
+        print("Internal Working")
+
+class Remote(TV):
+    def show(self):
+        print("Show your receipt")
+    
+obj=Remote()
+obj.Channel()
+obj.show()
+
+# # Abstraction.
+from abc import ABC, abstractmethod
+class TV(ABC):
+    @abstractmethod              # decorator
+    def Channel(self):
+        print("Internal Working.")
+
+class Remote(TV):
+    def Channel(self):
+        print("External Screen.")
+    
+obj=Remote()
+obj.Channel()
+
+# # Payment example with abstraction.
+from abc import ABC, abstractmethod
+class Payment(ABC):
+    @abstractmethod
+    def security(self):        # security is abstract method.
+        print("OTP.")
+        print("Amount.")
+
+    def show(self):            # show is concrete method.
+        print("UPI Name.")
+
+class UPI(Payment):
+    def security(self):
+        print("Amount.")
+
+obj=UPI()
+obj.security()
+obj.show()
