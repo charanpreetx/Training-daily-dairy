@@ -1,0 +1,40 @@
+# 15-07-2025.
+# File handling: It is an important part of any web application.
+# We can create, read, write, update and delete files.
+
+# open(): takes two arguments(filename and mode)
+# Mode
+# r "read"
+# w "write"
+# a "append"
+# x "create"
+
+# Read 
+f=open("batchD.txt","x")
+
+# # Write in batchD.txt.
+f=open("batchD.txt","w")
+f.write("Hi this is my created file.")
+
+# Update batchD.txt.
+f=open("batchD.txt","a")
+f.write("\nHello batch D")
+
+# Read batchD.txt.
+f=open("batchD.txt",'r')
+print(f.read())
+
+# Read batchD.txt.
+f=open("batchD.txt",'r')
+print(f.read(10))
+
+# # # Delete file.
+
+# To delete file we need to import OS module.
+import os
+
+if os.path.exists("batchD.txt"):
+    os.remove("batchD.txt")
+    print("your file is deleted successfully.")
+else:
+    print("your file does not exist.")
