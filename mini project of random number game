@@ -1,0 +1,30 @@
+# 17-07-2025
+# Random Module.
+# import random
+
+# # # # Generate a random float number between 0.0 and 1.0
+# print(random.random())
+
+# # # # Generate a random integer randint include 10.
+# print(random.randint(1,10))  # 1,2,3,4,5,6.....10
+
+# # # Genarate a random integer randrange exclude 10.
+# print(random.randrange(1,10))  # 1,2,3,4,5,6.....9
+
+# # # Mini project for random number game.
+# n = random.randint(1,10)
+# g = None
+# while g != n:                      
+# # work until g is not equal to n. if g==n then the program will stop.
+#  n = random.randint(1,10)
+#  g = int(input("Enter the number between 1 to 10 :- "))
+#  if g == n:
+#   print(g,n)
+#   print("Congratulations")   
+#  else:
+#   print(g,n)
+#   print("Invalid")    
+
+# Core Python Project
+# Rock, Paper and scissor.
+# Password generator.
